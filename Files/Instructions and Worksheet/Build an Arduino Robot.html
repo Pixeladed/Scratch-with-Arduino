@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Build an Arduino Robot</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h2 id="how-to">How To:</h2>
+
+<p><strong>Build an Arduino Robot:</strong></p>
+
+<p>Now that we’ve learnt how to program and Arduino to blink an LED light (at different rates), produce sound using the Piezo buzzer, and control servo motors, we can now combine all these skills to make our very own Arduino robot! You will need the following equipment to contruct a robot of you own:</p>
+
+<ol>
+<li>Arduino motherboard</li>
+<li>Parallax board of education shield</li>
+<li>1 LED light</li>
+<li>1 Piezo buzzer</li>
+<li>2 Servo motors</li>
+<li>5 batteries</li>
+<li>2 Wheels </li>
+</ol>
+
+<p>In order to make this robot function, students must follow a 2-part process to program and construct the robot.</p>
+
+<p><strong>Coding the Program</strong></p>
+
+<p><strong>LED Light and Piezo Buzzer:</strong> <br>
+to set up the LED light and Piezo buzzer, simply follow the coding steps in the previous instruction. Both codes should look like this:</p>
+
+<p><img src="http://i.imgur.com/fHt1GDL.png" alt="LED Light Code" title=""></p>
+
+<p><img src="http://i.imgur.com/vPo99vI.png" alt="Piezo Buzzer Code" title=""></p>
+
+<p><strong>Servo Motor:</strong> <br>
+To code the Servo motor, similar steps will be taken to control the robot. Follow the previous coding instructions and we will make changes to it after. The code should look like this:</p>
+
+<p><img src="http://i.imgur.com/E0lJiA5.png" alt="Servo Motor Code #1" title=""></p>
+
+<p>From here follow these steps coding steps: <br>
+Grab another two <code>motor 4 direction clockwise</code> blocks form the <code>motion</code> menu. Change the numbers from 4 to 12 in both blocks and connect one of each to both the existing <code>motor 13 direction clockwise</code> blocks in the <code>forever</code> loop. Change the top <code>motor 12 direction clockwise</code> block to anticlockwise instead. Now grab a <code>motor 4 off</code> block from the <code>motion</code> menu and change the number from 4 to 12. Join the <code>motor 12 off</code> block to the<code>motor 13 off</code> in the <code>forever</code> loop. The end code should look like this:</p>
+
+<p><img src="http://i.imgur.com/FFPmUYo.png" alt="Servo Motor Code #2" title=""></p>
+
+<p><strong>Building the Robot</strong></p>
+
+<p>The robot you will be given will look something like this:</p>
+
+<p><img src="http://www.lipoly.de/images/sparkfun-11494.jpg" alt="Parallax Arduino" title=""></p>
+
+<p>From here, in order to plug in the motors, do what is shown in the picture. Plug both cables in Servo Motor digital port 13 and 12, the left wheel’s cable goes into 13 and right goes into 12, look at the robot from the back when plugging in. Make sure that the black wire is the one closest to the white board (breadboard).</p>
+
+<p>If you have an LED with out a wire, looks like this:</p>
+
+<p><img src="http://i.imgur.com/mg3NJHB.jpg?1" alt="LED No Wire" title=""></p>
+
+<p>Plug the long end in digital port 4 on the white board (breadboard) and the short end in the ground port (labelled GND).</p>
+
+<p>If you have the one with wires use the same LED light from before and plug the yellow wire into the ground port (labelled GND) and the red wire in port 4.</p>
+
+<p>For the Piezo buzzer simply plug the 3 prongs in digital ports 9, 10 and 11 on the breadboard. Make sure the buzzer is facing forwards.</p>
+
+<p>From here, run all the commands and the robot should function. A tip to run all the commands together would be to use a boardcast command and when all the different codes receive the command they all start together. It will look like this:</p>
+
+<p><img src="http://i.imgur.com/QWx5imd.png" alt="Play All Code" title=""></p>
+
+<p><strong>Extension Work</strong></p>
+
+<p>If you have completed the tasks and would like some more exercises here are some codes to create, find out what happens:</p>
+
+<p><img src="http://i.imgur.com/mIseDgq.png" alt="Backwards Beeping" title=""></p>
+
+<p><img src="http://i.imgur.com/K7PPNno.png" alt="Turning left and right" title=""></p>
+
+<p>Experiment with these codes, see what you can come up with!</p></div></body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to Control LED Light</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h2 id="how-to">How to:</h2>
+
+<p><strong>Program and control and LED light:</strong></p>
+
+<p>After installation of Scratch 4 Arduino (referred to as S4A), students can begin to program some of their own robots using this program. In order to program an LED light and change it’s blink rate students must first have access to:</p>
+
+<blockquote>
+  <ol>
+  <li>An Arduino motherboard</li>
+  <li>An LED light</li>
+  <li>1 Red and 1 Yellow wire</li>
+  </ol>
+</blockquote>
+
+<p>After making sure S4A is functioning correctly with Arduino, the students can start programming the Arduino using S4A by following these steps:</p>
+
+<p><strong>Coding the Program</strong></p>
+
+<p>In order to tell the Arduino to do something we must first pick a starting key to press in order to initiate the command to the Arduino. We can do this by going to the menu in the top left of the S4A interface and selecting the box labelled <code>control</code>. On the left there should be many options to choose from, scan the menu and find the <code>when space key pressed</code> block and drag it to the blank space in the middle.</p>
+
+<p><img src="http://i.imgur.com/eK8MFpI.png?1" alt="Finding Boxes" title=""></p>
+
+<p>Then select a <code>forever</code> loop and connect it to the <code>when space key pressed</code> block. Select the <code>motion</code> box in the top left menu and grab a <code>digital 10 on</code> and <code>digital 10 off</code> and place them anywhere in the area in the middle. Change the value of digital 10 on/off from 10 to 4. Go back to the <code>control</code> menu and grab two <code>wait 1 secs</code> block and connect one of each on to the digital on/off blocks. Place the <code>digital 4 on</code> block in the forever loop followed by the <code>digital off block</code>, still have the wait 1 secs attached to them. The end code should look like this:c</p>
+
+<p><img src="http://i.imgur.com/uinuFKq.png" alt="End Code LED" title=""></p>
+
+<p><strong>Setting up Arduino</strong></p>
+
+<p>Connect your LED light to digital port 4 and ground (labelled GND) using the red and yellow wires. At the end of the LED light, slide the yellow wire into the white hole and the red wire into the yellow hole. Here is how it should look like:</p>
+
+<p><img src="http://i.imgur.com/iV0IvAU.png" alt="Yellow Red Wires" title=""></p>
+
+<p>Put the yellow wire in the GND port and the red wire in port 4, making sure that the light is still attached to both wires. Press space to blink the LED light. We can alter the blink rate by changing both values of x in the <code>wait x secs</code> blocks, increasing will slow the blink rate and decreasing it will cause a more rapid blink rate.</p></div></body>
+</html>
